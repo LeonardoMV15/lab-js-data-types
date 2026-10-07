@@ -48,11 +48,11 @@ console.log(tipAmount)
 *******************************************/
 
 // Generate a random integer between 1 and 10 (inclusive)
-function RandomNum(max) {
-  return Math.floor(Math.random() * max);
+function RandomNum(min, max) {
+  return Math.floor(Math.random() * (max-min)+min);
 }
 // Print the generated random number
-console.log(RandomNum(10))
+console.log(RandomNum(1,11))
 
 
 /*******************************************
